@@ -1,0 +1,221 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Albert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Plus+Jakarta+Sans:wght@300&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="http://127.0.0.1:5500/Project/media/WhatsApp%20Image%202023-11-25%20at%2018.26.48_ebe1aa61.jpg"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/
+aos@next/dist/aos.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/f90068558c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img
+          class="header-icon"
+          src="media/WhatsApp Image 2023-11-25 at 18.26.48_ebe1aa61.jpg"
+          alt=""
+        />
+        <h3 class="title"><a href="index.html">Albert The Coder</a></h3>
+        <nav>
+          <a href="project.html">Project</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="jumbotron">
+        <div class="jumbotron">
+          <h1
+            class="jumbotron-title"
+            onmouseover="changeText1()"
+            onmouseout="changeText2()"
+          >
+            Tips Coding!
+          </h1>
+          <div class="header-flex">
+            <div>
+              <h2 class="jumbotron-text">
+                Baru di programming? <br />Belajar lewat pengembangan
+                <span style="color: antiquewhite"> Game dan Web </span>
+                Sederhana
+              </h2>
+
+              <div class="mini-text-flex">
+                <p class="mini-text">Belajar Programming Awal</p>
+                <button id="icon-up" class="icon-up" onclick="changeText()">
+                  <i class="far fa-hand-point-up"></i>
+                </button>
+
+                <button id="icon-down" class="icon-down">
+                  <i class="far fa-hand-point-down"></i>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <img
+                class="jumbotron-img"
+                src="https://media.licdn.com/dms/image/D4E12AQFOMCbk_taAFw/article-cover_image-shrink_720_1280/0/1683378643397?e=2147483647&v=beta&t=dinktvYnhiq5OZ6vqo_VY6iOlE5tjZwt1ZGvn_Zka1A"
+                alt="jumbotron"
+                width="auto"
+                height="300"
+                onmouseover="changeImage(this)"
+                onmouseout="changeImageBack(this)"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#264653"
+          fill-opacity="1"
+          d="M0,128L80,112C160,96,320,64,480,80C640,96,800,160,960,154.7C1120,149,1280,75,1360,37.3L1440,0L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="main-content">
+        <aside>
+          <div data-aos="fade-right">
+            <div>
+              <h3 class="aside-title">It's Albert</h3>
+              <img
+                class="profile-picture"
+                src="media/WhatsApp Image 2023-11-25 at 18.26.48_ebe1aa61.jpg"
+                alt="profile"
+                width="150px"
+                height="auto"
+              />
+
+              <div class="toggle">
+                <button class="btn" id="green">
+                  <i class="fa fa-thumbs-up fa-lg"></i>
+                </button>
+                <button class="btn" id="red">
+                  <i class="fa fa-thumbs-down fa-lg"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="search-tags-container">
+              <div class="input-tag">
+                <h3 class="aside-title">Search Here</h3>
+                <input id="myInput" type="text" placeholder="Search ..." />
+                <span class="addBtn" onclick="newElement()">Search</span>
+              </div>
+
+              <ul id="myUL" class="search-tags-list">
+                <li class="search-tags-item">HTML</li>
+                <li class="search-tags-item">Code</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+
+        <div class="content">
+          <article id="maps">
+            <div class="maps">
+              <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.812517821103!2d106.89527147453033!3d-6.155859060335197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5b17e69633b%3A0x5859f2b731b274cf!2sTimedoor%20Academy%20%7C%20Kursus%20Coding%2C%20Programming%20di%20Kelapa%20Gading%2C%20Jakarta%20Utara%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1700909799146!5m2!1sen!2sid"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </article>
+
+          <article id="maps">
+            <div class="maps">
+              <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <iframe
+                  style="border-radius: 12px"
+                  src="https://open.spotify.com/embed/track/2R4AlwtrrkMaRKojcTIzmL?utm_source=generator"
+                  width="100%"
+                  height="352"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </article>
+
+          <article id="video">
+            <div class="item-video">
+              <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <h3 class="article-title">What is Coding?</h3>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/N7ZmPYaXoic?si=Lo6rBbAPjO--iAeB"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <h3 class="article-title">Coding is Not Difficult!</h3>
+
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/zOjov-2OZ0E?si=FLFQS19csNSJtuv1"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="main-footer">
+        <h3 class="info-top">Albert The Junior Programmer</h3>
+        <div class="social-media">
+          <i class="fab fa-instagram-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fas fa-envelope"></i>
+        </div>
+        <p class="info-center">
+          Copyright &copy; 2023. Albert. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="main.js"></script>
+</html>
